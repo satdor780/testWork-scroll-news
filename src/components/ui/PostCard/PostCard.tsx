@@ -51,6 +51,7 @@ export const PostCard = observer(({
           source={{ uri: coverUrl }}
           style={styles.cover}
           blurRadius={locked ? 40 : 0}
+          onError={(e) => console.log("avatar error:", e.nativeEvent.error)}
         />
 
         {locked && (
